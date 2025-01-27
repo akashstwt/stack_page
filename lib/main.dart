@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   int _currentPage = 0;
 
   @override
-Widget build(BuildContext context) {
+ Widget build(BuildContext context) {
   return Scaffold(
     body: Stack(
       children: [
@@ -108,7 +108,7 @@ Widget build(BuildContext context) {
             Text(
               'Move the dial and set any amount you need up to ₹487,891',
               style: TextStyle(
-                color: Colors.white.withOpacity(0.7),
+                color: Colors.white.withAlpha((0.5 * 255).toInt()),
                 fontSize: 16,
               ),
             ),
@@ -148,7 +148,7 @@ Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 60),
       child: Container(
-        color: Colors.black.withOpacity(0.5), // Add a semi-transparent overlay
+                color: Colors.black.withAlpha((0.5 * 255).toInt()),
         child: Align(
           alignment: Alignment.bottomCenter,
           child: Container(
@@ -165,7 +165,7 @@ Widget build(BuildContext context) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  color: Colors.white.withOpacity(0.5), // Add a semi-transparent overlay
+                color: Colors.white.withAlpha((0.5 * 255).toInt()),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -239,7 +239,7 @@ Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 100),
       child: Container(
-        color: Colors.black.withOpacity(0.5), // Add a semi-transparent overlay
+                color: Colors.black.withAlpha((0.5 * 255).toInt()),
         child: Align(
           alignment: Alignment.bottomCenter,
           child: Container(
@@ -256,7 +256,7 @@ Widget build(BuildContext context) {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  color: Colors.white.withOpacity(0.5), // Add a semi-transparent overlay
+                color: Colors.white.withAlpha((0.5 * 255).toInt()),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
